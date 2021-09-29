@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+  <ion-item *ngFor="let boton of botones" [routerLink]="boton.ruta">
+      <ion-icon slot="start" [name]="boton.icono" color="secondary"></ion-icon>
+      {{boton.nombre}}
+  </ion-item>
+</ion-list>
+</ion-content>
