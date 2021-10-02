@@ -24,6 +24,11 @@ export class InicioPage implements OnInit {
       nombre:"Action Sheet",
       ruta:"/action-sheet"
     },
+    {
+      icono:"accessibility-outline",
+      nombre:"Avatar",
+      ruta:"/avatar"
+    },
   ]
 
   constructor() { }

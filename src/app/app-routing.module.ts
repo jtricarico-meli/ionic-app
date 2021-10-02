@@ -16,6 +16,10 @@ const routes: Routes = [
     loadChildren: () => import('./pages/action-sheet/action-sheet.module').then( m => m.ActionSheetPageModule)
   },
   {
+    path: 'avatar',
+    loadChildren: () => import('./pages/avatar/avatar.module').then( m => m.AvatarPageModule)
+  },
+  {
     path: '',
     redirectTo: 'inicio',
     pathMatch: 'full'
