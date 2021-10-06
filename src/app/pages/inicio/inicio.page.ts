@@ -29,6 +29,16 @@ export class InicioPage implements OnInit {
       nombre:"Avatar",
       ruta:"/avatar"
     },
+    {
+      icono:"id-card-outline",
+      nombre:"Card",
+      ruta:"/card"
+    },
+    {
+      icono:"radio-button-on-outline",
+      nombre:"Buttons",
+      ruta:"/buttons"
+    },
   ]
 
   constructor() { }

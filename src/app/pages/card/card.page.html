@@ -1,0 +1,24 @@
+<ion-header>
+	<ion-toolbar>
+		<app-header titulo="Card"></app-header>
+		<ion-buttons slot="end">
+			<ion-button (click)="changeView()">
+				<ion-icon slot="icon-only" [name]="flagView ?'eye-off-sharp':'eye-sharp'"></ion-icon>
+			</ion-button>
+		</ion-buttons>
+	</ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-card *ngIf="flagView">
+    <img src="/assets/avatar.png" />
+    <ion-card-header>
+      <ion-card-subtitle>Destination</ion-card-subtitle>
+      <ion-card-title>Madison, WI</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Founded in 1829 on an isthmus between Lake Monona and Lake Mendota, Madison was named the capital of the Wisconsin Territory in 1836.
+    </ion-card-content>
+  </ion-card>
+</ion-content>
