@@ -1,0 +1,47 @@
+[
+    {
+      "icono": "alert-circle-outline",
+      "nombre":"Alert",
+      "ruta":"/alert"
+    },
+    {
+      "icono":"list-outline",
+      "nombre":"Action Sheet",
+      "ruta":"/action-sheet"
+    },
+    {
+      "icono":"accessibility-outline",
+      "nombre":"Avatar",
+      "ruta":"/avatar"
+    },
+    {
+      "icono":"id-card-outline",
+      "nombre":"Card",
+      "ruta":"/card"
+    },
+    {
+      "icono":"radio-button-on-outline",
+      "nombre":"Buttons",
+      "ruta":"/buttons"
+    },
+    {
+      "icono":"checkbox-outline",
+      "nombre":"Check",
+      "ruta":"/check"
+    },
+    {
+      "icono":"car-outline",
+      "nombre":"Fab",
+      "ruta":"/fab"
+    },
+    {
+      "icono":"reload-outline",
+      "nombre":"Loading",
+      "ruta":"/loading"
+    },
+    {
+      "icono":"document-text-outline",
+      "nombre":"Toast",
+      "ruta":"/toast"
+    }
+  ]

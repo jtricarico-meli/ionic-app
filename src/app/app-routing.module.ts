@@ -28,6 +28,22 @@ const routes: Routes = [
     loadChildren: () => import('./pages/buttons/buttons.module').then( m => m.ButtonsPageModule)
   },
   {
+    path: 'check',
+    loadChildren: () => import('./pages/check/check.module').then( m => m.CheckPageModule)
+  },
+  {
+    path: 'fab',
+    loadChildren: () => import('./pages/fab/fab.module').then( m => m.FabPageModule)
+  },
+  {
+    path: 'loading',
+    loadChildren: () => import('./pages/loading/loading.module').then( m => m.LoadingPageModule)
+  },
+  {
+    path: 'toast',
+    loadChildren: () => import('./pages/toast/toast.module').then( m => m.ToastPageModule)
+  },
+  {
     path: '',
     redirectTo: 'inicio',
     pathMatch: 'full'
@@ -37,6 +53,7 @@ const routes: Routes = [
     redirectTo: 'inicio',
     pathMatch: 'prefix'
   },
+
 ];
 
 @NgModule({

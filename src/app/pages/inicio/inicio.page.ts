@@ -1,10 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
-interface Componente {
-  icono:string
-  nombre:string
-  ruta:string
-}
+import { Observable } from 'rxjs';
+import { Componente } from 'src/app/intefaces/components';
+import { DataService } from '../../services/data.service';
 
 @Component({
   selector: 'app-inicio',
@@ -13,37 +10,12 @@ interface Componente {
 })
 export class InicioPage implements OnInit {
 
-  botones:Componente[] = [
-    {
-      icono: "alert-circle-outline",
-      nombre:"Alert",
-      ruta:"/alert",
-    },
-    {
-      icono:"list-outline",
-      nombre:"Action Sheet",
-      ruta:"/action-sheet"
-    },
-    {
-      icono:"accessibility-outline",
-      nombre:"Avatar",
-      ruta:"/avatar"
-    },
-    {
-      icono:"id-card-outline",
-      nombre:"Card",
-      ruta:"/card"
-    },
-    {
-      icono:"radio-button-on-outline",
-      nombre:"Buttons",
-      ruta:"/buttons"
-    },
-  ]
+  public botones :Observable<Componente[]>
 
-  constructor() { }
+  constructor(private dataSrv: DataService) { }
 
   ngOnInit() {
+    this.botones = this.dataSrv.getMenuOpts()
   }
 
 }
